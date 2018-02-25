@@ -92,14 +92,12 @@ body .carousel-indicators .active {
   background-color: #00a0aa; }
 
 .center_box .center_content {
-  position: fixed;
   top: 40px;
   left: 0;
   z-index: 999;
   background-color: white; }
 
 .ding_box {
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 999; }

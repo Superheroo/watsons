@@ -19,8 +19,7 @@ body .carousel-control {
 body .carousel-indicators .active{
     background-color: $color;
 }
-.center_box .center_content{
-    position: fixed;
+.center_box .center_content{ 
     top: 40px;
     left: 0;
     z-index: 999;
@@ -28,7 +27,6 @@ body .carousel-indicators .active{
     
 }
 .ding_box{
-       position: fixed;
     top: 0;
     left: 0; 
     z-index: 999;
