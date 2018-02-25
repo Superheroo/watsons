@@ -1,0 +1,244 @@
+@charset "UTF-8";
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td, menu {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+ul, dl, ol {
+  list-style: none; }
+
+img, fieldset, input[type="submit"] {
+  border: 0 none; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button, input[type="button"] {
+  cursor: pointer;
+  border: 0 none; }
+
+a, button, input, img {
+  -webkit-touch-callout: none; }
+
+img {
+  /*pointer-events:none;*/
+  /*禁止图片的点击事件，例如长按保存图片*/ }
+
+input, select, textarea {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+html, body {
+  /*禁止用户选择元素*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  /*禁止元素点击出现半透明黑色背景*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Microsoft YaHei', 'Heiti SC';
+  outline: 0;
+  -webkit-text-size-adjust: none; }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative; }
+
+.clear_fix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.header_top span {
+  color: #00a0aa; }
+.header_top a {
+  display: inline-block;
+  text-decoration: none;
+  color: #00a0aa;
+  padding: 10px; }
+.header_top a:hover {
+  color: red; }
+
+.header_bottom {
+  background-color: #00a0aa; }
+  .header_bottom .bottom_right {
+    margin-left: 290px; }
+  .header_bottom img {
+    width: 190px;
+    height: 40px;
+    margin-top: 10px; }
+  .header_bottom ul li {
+    float: left;
+    text-align: right; }
+  .header_bottom a {
+    text-decoration: none;
+    color: white; }
+  .header_bottom li {
+    padding: 20px; }
+    .header_bottom li:hover {
+      background-color: #00A0A0; }
+
+.content_box {
+  background-color: #F8F8F8; }
+  .content_box .details {
+    background-color: white;
+    margin-top: 20px; }
+    .content_box .details ul li {
+      float: none; }
+    .content_box .details .kong {
+      float: left;
+      padding: 20px; }
+      .content_box .details .kong .fenlei1, .content_box .details .kong .fenlei2, .content_box .details .kong .fenlei3 {
+        cursor: pointer; }
+        .content_box .details .kong .fenlei1 span, .content_box .details .kong .fenlei2 span, .content_box .details .kong .fenlei3 span {
+          display: inline-block;
+          font-size: 16px;
+          padding: 5px;
+          font-weight: bold; }
+    .content_box .details .tou {
+      display: inline-block;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 18px; }
+    .content_box .details .search {
+      margin-top: 10px;
+      margin-right: 10px;
+      padding: 5px;
+      float: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      background-color: transparent;
+      border: 1px solid gray; }
+    .content_box .details input {
+      margin: 10px 25px;
+      padding: 5px;
+      float: right; }
+    .content_box .details input:focus {
+      padding: 5px;
+      margin-top: 10px;
+      box-shadow: 0px 0px 10px skyblue;
+      transition: all .2s linear; }
+    .content_box .details .tab-content > .active {
+      border-top: 3px solid ghostwhite;
+      margin-left: 121px; }
+    .content_box .details .nav-tabs {
+      border: none; }
+    .content_box .details .nav-tabs > li > a {
+      border: none;
+      color: black; }
+    .content_box .details .nav-tabs > li.active > a,
+    .content_box .details .nav-tabs > li.active > a:hover,
+    .content_box .details .nav-tabs > li.active > a:focus {
+      background-color: #00a0aa;
+      color: white; }
+    .content_box .details table {
+      border: 1px solid #eee;
+      margin-top: 10px; }
+      .content_box .details table th {
+        background-color: #00a0aa;
+        color: white;
+        text-align: center;
+        width: 300px;
+        height: 38px;
+        line-height: 38px; }
+      .content_box .details table option {
+        color: black;
+        background-color: white; }
+      .content_box .details table select {
+        background-color: #00a0aa;
+        border: none; }
+    .content_box .details .address {
+      margin: 20px auto;
+      background-color: #F4F5F9; }
+      .content_box .details .address h4 {
+        padding: 20px;
+        color: #00a0aa; }
+    .content_box .details .save_address {
+      width: 100%;
+      height: 166px; }
+    .content_box .details .new_address {
+      width: 100%;
+      height: 700px; }
+      .content_box .details .new_address .address_content {
+        width: 96%;
+        height: 76%;
+        margin-left: 19px;
+        background-color: white; }
+        .content_box .details .new_address .address_content .xiugai {
+          width: 100px;
+          height: 40px;
+          background-color: #00a0aa;
+          color: white;
+          border-radius: 10px;
+          margin-left: 188px;
+          margin-top: 20px; }
+        .content_box .details .new_address .address_content .querenxiugai {
+          position: absolute;
+          top: 400px;
+          left: 155px; }
+        .content_box .details .new_address .address_content .address_count {
+          height: 40px;
+          padding: 20px 0;
+          margin: 20px 0; }
+          .content_box .details .new_address .address_content .address_count span {
+            width: 160px;
+            font-family: courier;
+            font-weight: bold;
+            padding: 0 40px;
+            float: left;
+            display: inline-block;
+            text-align: right; }
+          .content_box .details .new_address .address_content .address_count .tong {
+            height: 35px;
+            float: left;
+            padding: 10px; }
+          .content_box .details .new_address .address_content .address_count .duan {
+            width: 220px; }
+          .content_box .details .new_address .address_content .address_count .chang {
+            width: 420px; }
+          .content_box .details .new_address .address_content .address_count .xiao {
+            float: left;
+            border: none;
+            margin: 0;
+            margin-left: 25px; }
+          .content_box .details .new_address .address_content .address_count .moren {
+            width: 200px;
+            padding: 0;
+            text-align: left; }
+          .content_box .details .new_address .address_content .address_count .dizhi {
+            width: 140px;
+            height: 40px;
+            background-color: #00a0aa;
+            color: white;
+            border-radius: 10px;
+            margin-left: 25px; }
+
+/*# sourceMappingURL=mycenter.css.map */

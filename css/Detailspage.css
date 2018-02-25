@@ -1,0 +1,277 @@
+@charset "UTF-8";
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td, menu {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+ul, dl, ol {
+  list-style: none; }
+
+img, fieldset, input[type="submit"] {
+  border: 0 none; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button, input[type="button"] {
+  cursor: pointer;
+  border: 0 none; }
+
+a, button, input, img {
+  -webkit-touch-callout: none; }
+
+img {
+  /*pointer-events:none;*/
+  /*禁止图片的点击事件，例如长按保存图片*/ }
+
+input, select, textarea {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+html, body {
+  /*禁止用户选择元素*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  /*禁止元素点击出现半透明黑色背景*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Microsoft YaHei', 'Heiti SC';
+  outline: 0;
+  -webkit-text-size-adjust: none; }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative; }
+
+.clear_fix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.shangpin_box {
+  background-color: #F8F8F8; }
+  .shangpin_box .shangpinye {
+    margin-left: 146px;
+    background-color: white; }
+    .shangpin_box .shangpinye p {
+      text-indent: 1.5em;
+      padding: 10px 0;
+      margin: 0;
+      color: #999999;
+      border-bottom: 1px solid #999999; }
+      .shangpin_box .shangpinye p a {
+        color: black; }
+    .shangpin_box .shangpinye img {
+      max-width: 380px;
+      min-height: 300px;
+      padding: 10px 0; }
+    .shangpin_box .shangpinye .thumb-ctrl {
+      text-decoration: none;
+      width: 30px;
+      height: 85px;
+      line-height: 85px;
+      text-align: center;
+      border: 1px solid #DDE3EB; }
+      .shangpin_box .shangpinye .thumb-ctrl .my_icon {
+        font-size: 30px;
+        color: gainsboro; }
+    .shangpin_box .shangpinye .thumb-items {
+      margin-left: 40px;
+      margin-right: 40px;
+      width: 100%;
+      height: 100px;
+      border: 1px solid transparent; }
+      .shangpin_box .shangpinye .thumb-items ul li {
+        float: left; }
+      .shangpin_box .shangpinye .thumb-items img {
+        width: 60px;
+        min-height: 40px; }
+      .shangpin_box .shangpinye .thumb-items .active {
+        border: 2px solid #D22147; }
+    .shangpin_box .shangpinye .desc .shoucang a {
+      text-decoration: none;
+      color: black; }
+    .shangpin_box .shangpinye .yuan {
+      display: inline-block;
+      padding: 10px 20px;
+      position: relative; }
+      .shangpin_box .shangpinye .yuan::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: #B31C28;
+        border-radius: 10px;
+        position: absolute;
+        top: 10px;
+        left: -8px; }
+    .shangpin_box .shangpinye h4 {
+      padding: 20px 0; }
+    .shangpin_box .shangpinye .price {
+      border-top: 1px dashed #999999;
+      border-bottom: 1px dashed #999999; }
+      .shangpin_box .shangpinye .price .price_left .hui {
+        padding: 0 10px 0 0;
+        color: #999999; }
+      .shangpin_box .shangpinye .price .price_left .qian {
+        display: inline-block;
+        font-size: 32px;
+        color: #B31C28;
+        padding: 10px; }
+      .shangpin_box .shangpinye .price .price_left .shan {
+        display: inline-block;
+        padding: 0 5px;
+        font-size: 18px;
+        text-decoration: line-through;
+        color: black; }
+      .shangpin_box .shangpinye .price .price_left .hei {
+        display: inline-block;
+        color: black;
+        font-size: 16px;
+        padding: 5px 6px; }
+      .shangpin_box .shangpinye .price .price_left .hong {
+        display: inline-block;
+        color: red;
+        padding: 7px; }
+      .shangpin_box .shangpinye .price .price_right .huixiao {
+        padding-top: 10px;
+        display: inline-block;
+        font-size: 14px;
+        color: #999999; }
+      .shangpin_box .shangpinye .price .price_right .shuoming {
+        width: 210px;
+        height: 130px;
+        border: 1px solid #999999;
+        margin-top: 50px; }
+      .shangpin_box .shangpinye .price .price_right .hong {
+        text-align: left;
+        color: red;
+        position: relative;
+        font-size: 12px;
+        text-indent: 0;
+        padding: 10px;
+        border: 1px solid transparent; }
+      .shangpin_box .shangpinye .price .price_right .icon-sanjiaoshang {
+        position: absolute;
+        top: 165px;
+        right: 44px;
+        font-size: 30px;
+        color: #999999; }
+      .shangpin_box .shangpinye .price .price_right .hui {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        color: #999999;
+        text-indent: 0;
+        padding: 0 10px; }
+    .shangpin_box .shangpinye .shuliang {
+      width: 270px;
+      font-size: 0; }
+    .shangpin_box .shangpinye .anniu .lijigoumai {
+      color: #D22248;
+      font-size: 18px;
+      width: 165px;
+      height: 45px;
+      border-radius: 5px;
+      line-height: 45px;
+      text-align: center;
+      border: 2px solid #D22248;
+      background-color: #FFECED;
+      margin-top: 30px; }
+      .shangpin_box .shangpinye .anniu .lijigoumai:hover {
+        background-color: white; }
+    .shangpin_box .shangpinye .anniu .jiarugouwuche {
+      color: white;
+      font-size: 18px;
+      width: 165px;
+      height: 45px;
+      border-radius: 5px;
+      line-height: 45px;
+      text-align: center;
+      border: 2px solid #D22248;
+      background-color: #D22248; }
+      .shangpin_box .shangpinye .anniu .jiarugouwuche:hover {
+        background-color: red; }
+    .shangpin_box .shangpinye .hui {
+      font-size: 14px;
+      display: inline-block;
+      padding: 10px 10px 0 0;
+      color: #999999; }
+    .shangpin_box .shangpinye .chang {
+      width: 60px;
+      height: 26px;
+      text-align: center;
+      line-height: 25px;
+      display: inline-block;
+      border: 1px solid #999999;
+      font-size: 14px; }
+    .shangpin_box .shangpinye .fuhao {
+      font-size: 14px;
+      text-decoration: none;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      border: 1px solid #999999;
+      text-align: center; }
+    .shangpin_box .shangpinye .btn-default {
+      background-color: #FAFAFA; }
+    .shangpin_box .shangpinye .btn .caret {
+      margin-left: 38px; }
+    .shangpin_box .shangpinye .dropdown-menu {
+      min-width: 90px; }
+  .shangpin_box .shangpinxiangqing_box {
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 1px gray;
+    margin-top: 50px;
+    margin-left: 146px;
+    background-color: white; }
+    .shangpin_box .shangpinxiangqing_box .shangpin_left {
+      border-top: 3px solid #00a0aa;
+      border-right: 1px solid #999999;
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+      color: #00a0aa; }
+    .shangpin_box .shangpinxiangqing_box .shangpin_right {
+      padding: 25px;
+      border-bottom: 1px solid #999999; }
+    .shangpin_box .shangpinxiangqing_box ul li {
+      float: left;
+      padding: 30px 20px; }
+    .shangpin_box .shangpinxiangqing_box li {
+      width: 300px; }
+    .shangpin_box .shangpinxiangqing_box .img_box {
+      margin-left: 88px;
+      margin-bottom: 30px; }
+      .shangpin_box .shangpinxiangqing_box .img_box .shangtu {
+        margin-bottom: 10px; }
+
+/*# sourceMappingURL=Detailspage.css.map */

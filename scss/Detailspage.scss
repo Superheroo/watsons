@@ -1,0 +1,254 @@
+@charset "utf-8";
+@import "common/reset";
+$color:#00a0aa;
+.shangpin_box {
+    background-color: #F8F8F8;
+    .shangpinye {
+        margin-left: 146px;
+        background-color: white;
+        p {
+            text-indent: 1.5em;
+            padding: 10px 0;
+            margin: 0;
+            color: #999999;
+            border-bottom: 1px solid #999999;
+            a {
+                color: black;
+            }
+        }
+        img {
+            max-width: 380px;
+            min-height: 300px;
+            padding: 10px 0;
+        }
+        .thumb-ctrl {
+            .my_icon {
+                font-size: 30px;
+                color: gainsboro;
+            }
+            text-decoration: none;
+            width: 30px;
+            height: 85px;
+            line-height: 85px;
+            text-align: center;
+            border: 1px solid #DDE3EB;
+        }
+        .thumb-items {
+            margin-left: 40px;
+            margin-right: 40px;
+            width: 100%;
+            height: 100px;
+            border: 1px solid transparent;
+            ul li {
+                float: left;
+            }
+            img {
+                width: 60px;
+                min-height: 40px;
+            }
+            .active {
+                border: 2px solid #D22147;
+            }
+        }
+        .desc .shoucang a {
+            text-decoration: none;
+            color: black;
+        }
+        .yuan {
+            display: inline-block;
+            padding: 10px 20px;
+            position: relative;
+            &::before {
+                content: "";
+                width: 20px;
+                height: 20px;
+                background-color: #B31C28;
+                border-radius: 10px;
+                position: absolute;
+                top: 10px;
+                left: -8px;
+            }
+        }
+        h4 {
+            padding: 20px 0;
+        }
+        .price {
+            border-top: 1px dashed #999999;
+            border-bottom: 1px dashed #999999;
+            .price_left {
+                .hui {
+                    padding: 0 10px 0 0;
+                    color: #999999;
+                }
+                .qian {
+                    display: inline-block;
+                    font-size: 32px;
+                    color: #B31C28;
+                    padding: 10px;
+                }
+                .shan {
+                    display: inline-block;
+                    padding: 0 5px;
+                    font-size: 18px;
+                    text-decoration: line-through;
+                    color: black;
+                }
+                .hei {
+                    display: inline-block;
+                    color: black;
+                    font-size: 16px;
+                    padding: 5px 6px;
+                }
+                .hong {
+                    display: inline-block;
+                    color: red;
+                    padding: 7px;
+                }
+            }
+            .price_right {
+                .huixiao {
+                    padding-top: 10px;
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #999999;
+                }
+                .shuoming {
+                    width: 210px;
+                    height: 130px;
+                    border: 1px solid #999999;
+                    margin-top: 50px;
+                }
+                .hong {
+                    text-align: left;
+                    color: red;
+                    position: relative;
+                    font-size: 12px;
+                    text-indent: 0;
+                    padding: 10px;
+                    border: 1px solid transparent;
+                }
+                .icon-sanjiaoshang {
+                    position: absolute;
+                    top: 165px;
+                    right: 44px;
+                    font-size: 30px;
+                    color: #999999;
+                }
+                .hui {
+                    display: inline-block;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 12px;
+                    color: #999999;
+                    text-indent: 0;
+                    padding: 0 10px;
+                }
+            }
+        }
+        .shuliang {
+            width: 270px;
+            font-size: 0;
+        }
+        .anniu {
+            .lijigoumai {
+                color: #D22248;
+                font-size: 18px;
+                width: 165px;
+                height: 45px;
+                border-radius: 5px;
+                line-height: 45px;
+                text-align: center;
+                border: 2px solid #D22248;
+                background-color: #FFECED;
+                margin-top: 30px;
+                &:hover {
+                    background-color: white;
+                }
+            }
+            .jiarugouwuche {
+                color: white;
+                font-size: 18px;
+                width: 165px;
+                height: 45px;
+                border-radius: 5px;
+                line-height: 45px;
+                text-align: center;
+                border: 2px solid #D22248;
+                background-color: #D22248;
+                &:hover {
+                    background-color: red;
+                }
+            }
+        }
+        .hui {
+            font-size: 14px;
+            display: inline-block;
+            padding: 10px 10px 0 0;
+            color: #999999;
+        }
+        .chang {
+            width: 60px;
+            height: 26px;
+            text-align: center;
+            line-height: 25px;
+            //              padding: 5px;
+            display: inline-block;
+            border: 1px solid #999999;
+            font-size: 14px;
+        }
+        .fuhao {
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            border: 1px solid #999999;
+            text-align: center;
+        }
+        .btn-default {
+            background-color: #FAFAFA;
+        }
+        .btn .caret {
+            margin-left: 38px;
+        }
+        .dropdown-menu {
+            min-width: 90px;
+        }
+    }
+    .shangpinxiangqing_box{
+        margin-bottom: 30px;
+        box-shadow: 0px 1px 1px gray;
+        margin-top: 50px;
+        margin-left: 146px;
+        background-color: white;
+      .shangpin_left{
+          border-top: 3px solid $color;
+          border-right: 1px solid #999999;
+          text-align: center;
+          padding: 10px;
+          font-size: 20px;
+          color: $color;
+      }  
+        .shangpin_right{
+            padding: 25px;
+           border-bottom: 1px solid #999999; 
+        }
+        ul li{
+            float: left;
+            padding: 30px 20px;
+        }
+        li{
+            width: 300px;
+        }
+        .img_box{
+            margin-left: 88px;
+            margin-bottom: 30px;
+            .shangtu{
+                margin-bottom: 10px;
+            }
+        }
+        
+    }
+    
+}

@@ -1,0 +1,162 @@
+@charset "utf-8";
+@import "common/reset";
+$color:#00a0aa;
+//商品
+.goods_box {
+    background-color: #F2F5FE;
+    .goods_content {
+        ol li {
+            padding: 0;
+            margin: 0;
+            float: left;
+            padding: 10px;
+        }
+        li {
+            text-indent: 2em;
+            position: relative;
+            &:nth-of-type(2) {
+                 ::before {
+                    content: ">";
+                    width: 5px;
+                    height: 5px;
+                    position: absolute;
+                    top: 10px;
+                    left: -20px;
+                }
+            }
+            a {
+                color: black;
+            }
+        }
+        .pinpai {
+            margin-left: 110px;
+            background-color: white;
+            .pinpai_left {
+                p {
+                    padding: 10px;
+                    text-align: center;
+                }
+                border-right: 1px solid gainsboro;
+            }
+            .pinpai_right {
+                a {
+                    display: inline-block;
+                    color: black;
+                    padding: 15px;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: red;
+                }
+                button {
+                    width: 55px;
+                    height: 30px;
+                    background-color: transparent;
+                    border: 1px solid gray;
+                    .icon-arrow {
+                        color: red;
+                    }
+                }
+            }
+        }
+        .chandi {
+            margin-bottom: 20px;
+            margin-left: 110px;
+            background-color: white;
+            border-top: 1px dashed lightgray;
+            border-bottom: 1px dashed lightgray;
+            .chandi_left {
+                p {
+                    padding: 10px;
+                    text-align: center;
+                }
+                border-right: 1px solid gainsboro;
+            }
+            .chandi_right {
+                a {
+                    display: inline-block;
+                    color: black;
+                    padding: 15px 40px;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: red;
+                }
+                button {
+                    margin-left: 74px;
+                    width: 55px;
+                    height: 30px;
+                    background-color: transparent;
+                    border: 1px solid gray;
+                    .icon-arrow {
+                        color: red;
+                    }
+                }
+            }
+        }
+        .goods {
+            margin-left: 110px;
+            background-color: white;
+            .goods_a {
+                height: 400px;
+                .img {
+                    border: 1px solid gainsboro;
+                    padding: 10px;
+                    width: 220px;
+                    height: 245px;
+                    overflow: hidden;
+                    text-align: center;
+                    position: relative;
+                }
+                img {
+                    max-width: 200px;
+                    max-height: 200px;
+                    cursor: pointer;
+                }
+                a {
+                    display: inline-block;
+                    background-color: $color;
+                    padding: 10px;
+                    color: white;
+                    font-size: 16px;
+                    width: 100%;
+                    height: 40px;
+                    transition: all .2s ease-in-out;
+                    position: absolute;
+                    bottom: -40px;
+                    left: 0;
+                }
+                .img:hover a {
+                    transform: translateY(-40px);
+                }
+                .xiangqing {
+                    background-color: transparent;
+                    color: black;
+                    font-size: 14px;
+                    position: absolute;
+                    top: 240px;
+                    left: 0;
+                }
+                .xiangqing:hover {
+                    color: red;
+                }
+                .p1 {
+                    position: absolute;
+                    top: 316px;
+                    left: 8px;
+                    font-size: 18px;
+                    color: red;
+                }
+                .p2 {
+                    position: absolute;
+                    top: 350px;
+                    left: 10px;
+                }
+                span {
+                    color: gainsboro;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}

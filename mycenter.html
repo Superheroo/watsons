@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/mycenter.css" />
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+	</head>   
+
+	<body>
+		<!--头部 S-->
+		<div class="container-fluid header_top">
+			<div class="row">
+				<div class="col-md-11 col-md-offset-1">
+					<div>
+						<div class="col-md-6">
+							<span>欢迎光临屈臣氏</span>
+							<a href="login.html">韩建华</a>
+							<a href="">安全退出</a>
+						</div>
+						<div class="col-md-6">
+							<a href="">购物车（0）</a>
+							<a href="">个人中心</a>
+							<a href="">联系我们</a>
+							<a href="">收藏本站</a>
+							<a href="">帮助</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid header_bottom">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div>
+						<div class="col-md-6">
+							<a href="index.html">
+								<img src="img/mycenter/logo-global.png" />
+							</a>
+						</div>
+						<div class="col-md-6">
+							<div class=" bottom_right">
+								<ul>
+									<li>
+										<a href="index.html">首页</a>
+									</li>
+									<li>
+										<a href="">账户设置</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--头部 E-->
+		<!--内容 S-->
+		<div class="container-fluid content_box">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 details">
+					<div>
+
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs kong" role="tablist">
+
+							<div class="fenlei1"><i class="iconfont icon-fenlei"></i><span>我是买家</span></div>
+							<li role="presentation" class="active">
+								<a href="#dingdan" aria-controls="home" role="tab" data-toggle="tab">我的订单</a>
+							</li>
+							<li role="presentation">
+								<a href="#shoucang" aria-controls="profile" role="tab" data-toggle="tab">我的收藏</a>
+							</li>
+							<li role="presentation">
+								<a href="#dizhi" aria-controls="messages" role="tab" data-toggle="tab">收货地址</a>
+							</li>
+
+							<div class="fenlei2"><i class="iconfont icon-fenlei"></i><span>促销信息</span></div>
+
+							<li role="presentation">
+								<a href="#my_youhuiquan" aria-controls="settings" role="tab" data-toggle="tab">我的优惠券</a>
+							</li>
+							<li role="presentation">
+								<a href="#get_youhuiquan" aria-controls="home" role="tab" data-toggle="tab">领取优惠券</a>
+							</li>
+
+							<div class="fenlei3"><i class="iconfont icon-fenlei"></i><span>账户设置</span></div>
+							<li role="presentation">
+								<a href="#person" aria-controls="profile" role="tab" data-toggle="tab">个人资料</a>
+							</li>
+							<li role="presentation">
+								<a href="#password" aria-controls="messages" role="tab" data-toggle="tab">修改密码</a>
+							</li>
+							<li role="presentation">
+								<a href="index.html">安全退出</a>
+							</li>
+						</ul>
+						<span class="tou">我的订单</span>
+						<input placeholder="订单编号/收货人姓名查询" /><button class="search"><i class="iconfont icon-fangdajing"></i></button>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="dingdan">
+								<table border="" cellspacing="" cellpadding="">
+									<tr>
+										<th>订单信息</th>
+										<th>收货人</th>
+										<th>订单金额</th>
+										<th>下单时间</th>
+										<th>
+											<select name="">
+												<option value="">订单状态</option>
+												<option value="">提交订单</option>
+												<option value="">提交订单失败</option>
+												<option value="">已付款待审核</option>
+												<option value="">付款已确认</option>
+												<option value="">付款已失败</option>
+												<option value="">跨境支付成功</option>
+												<option value="">跨境支付失败</option>
+												<option value="">保税区推送成功</option>
+												<option value="">运单生成成功</option>
+												<option value="">运单生成失败</option>
+												<option value="">清关申报</option>
+												<option value="">清关成功</option>
+												<option value="">清关失败</option>
+												<option value="">发仓库配货</option>
+												<option value="">发仓库配货失败</option>
+												<option value="">仓库已配货</option>
+												<option value="">已发货</option>
+												<option value="">客户确认收货</option>
+												<option value="">完成</option>
+
+											</select>
+										</th>
+										<th>操作</th>
+									</tr>
+								</table>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="shoucang">
+								<table border="" cellspacing="" cellpadding="">
+									<tr>
+										<th>商品信息</th>
+										<th>价格</th>
+										<th>关注时间</th>
+										<th>操作</th>
+									</tr>
+								</table>
+
+							</div>
+							<div role="tabpanel" class="tab-pane" id="dizhi">
+								<div class="save_address address">
+									<h4>已保存的收货地址</h4>
+									<table border="" cellspacing="" cellpadding="">
+										<tr>
+											<th>收货人</th>
+											<th>所在地区</th>
+											<th>街道地址</th>
+											<th>邮编</th>
+											<th>联系方式</th>
+											<th>操作</th>
+										</tr>
+									</table>
+								</div>
+								<div class="new_address address">
+									<h4>新增收货地址</h4>
+									<div class="address_content">
+										<div class="address_count">
+											<span>所在地区</span>
+											<select name="">
+												<option value="">广东省</option>
+
+											</select>
+											<select name="">
+												<option value="">广州市</option>
+											</select>
+											<select name="">
+												<option value="">天河区</option>
+											</select>
+										</div>
+										<div class="address_count">
+											<span>邮政编码</span>
+
+											<input class="duan tong">
+										</div>
+										<div class="address_count">
+											<span>详细地址</span>
+											<input placeholder="不需要填写省市区" class="chang tong" />
+										</div>
+										<div class="address_count">
+											<span>收货人姓名</span>
+											<input class="duan tong" />
+										</div>
+										<div class="address_count">
+											<span>身份证号</span>
+											<input class="duan tong" />
+										</div>
+										<div class="address_count">
+											<span>手机号码</span>
+											<input type="" class="duan tong" />
+										</div>
+										<div class="address_count">
+											<span>选项</span>
+											<input type="checkbox" class="xiao" />
+											<span class="moren">设为默认地址</span>
+										</div>
+										<div class="address_count">
+											<span>操作</span>
+											<button class="dizhi">保存新地址</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="my_youhuiquan">
+								4
+							</div>
+							<div role="tabpanel" class="tab-pane" id="get_youhuiquan">5</div>
+							<div role="tabpanel" class="tab-pane" id="person">
+								<div class="new_address address">
+									<h4>用户基本资料</h4>
+									<div class="address_content">
+										<div class="address_count">
+											<span>用户名</span>
+										</div>
+										<div class="address_count">
+											<span>姓名</span>
+
+										</div>
+										<div class="address_count">
+											<span>身份证号</span>
+										</div>
+										<div class="address_count">
+											<span>性别</span>
+										</div>
+										<div class="address_count">
+											<span>生日</span>
+										</div>
+										<div class="address_count">
+											<span>手机</span>
+										</div>
+										<div class="address_count">
+											<span>邮箱</span>
+										</div>
+										<button class="xiugai">修改</button>
+
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="password">
+								<div class="new_address address">
+									<h4>修改密码</h4>
+									<div class="address_content">
+										<div class="address_count">
+											<span>原密码</span>
+
+											<input class="duan tong">
+										</div>
+										<div class="address_count">
+											<span>新密码</span>
+											<input class="duan tong" />
+										</div>
+										<div class="address_count">
+											<span>确认新密码</span>
+											<input class="duan tong" />
+										</div>
+										<button class="xiugai querenxiugai">确认修改</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--内容 E-->
+
+		<script src="js/jquery-2.1.0.js " type="text/javascript " charset="utf-8 "></script>
+		<script src="js/bootstrap.js " type="text/javascript " charset="utf-8 "></script>
+		<script>
+			$('#myTabs a').click(function(e) {
+				e.preventDefault()
+				$(this).tab('show')
+			})
+
+			//点击获取对应值
+			var oli = document.querySelectorAll('li'),
+				tou = document.querySelector('.tou');
+			for(var i = 0; i < oli.length; i++) {
+				oli[i].onclick = function() {
+					tou.innerText = this.innerText;
+				}
+			}
+
+			//点击缩放
+			var fenlei1 = document.querySelector(".fenlei1"),
+				fenlei2 = document.querySelector(".fenlei2"),
+				fenlei3 = document.querySelector(".fenlei3"),
+				oli = document.querySelectorAll("li"),
+				is_have = true,
+				arr = [];
+			for(var i = 0; i < oli.length; i++) {
+				arr.push(oli[i]);
+			}
+			fenlei1.addEventListener("click", function() {
+				arr[2].innerText = "";
+				arr[3].innerText = "";
+				arr[4].innerText = "";
+			})
+			fenlei2.addEventListener("click", function() {
+				arr[5].innerText ="";
+				arr[6].innerText = "";
+
+			})
+			fenlei3.addEventListener("click", function() {
+				arr[7].innerText = "";
+				arr[8].innerText = "";
+				arr[9].innerText = "";
+			})
+		</script>
+	</body>
+
+</html>

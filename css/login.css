@@ -1,0 +1,322 @@
+@charset "UTF-8";
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td, menu {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+ul, dl, ol {
+  list-style: none; }
+
+img, fieldset, input[type="submit"] {
+  border: 0 none; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button, input[type="button"] {
+  cursor: pointer;
+  border: 0 none; }
+
+a, button, input, img {
+  -webkit-touch-callout: none; }
+
+img {
+  /*pointer-events:none;*/
+  /*禁止图片的点击事件，例如长按保存图片*/ }
+
+input, select, textarea {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+html, body {
+  /*禁止用户选择元素*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  /*禁止元素点击出现半透明黑色背景*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Microsoft YaHei', 'Heiti SC';
+  outline: 0;
+  -webkit-text-size-adjust: none; }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative; }
+
+.clear_fix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.boss_box {
+  background-color: #daecec; }
+  .boss_box .shang {
+    margin-top: 30px; }
+  .boss_box button {
+    background-color: cadetblue;
+    width: 20px;
+    height: 20px; }
+    .boss_box button .icon-arrow-right {
+      color: white; }
+  .boss_box .denglu {
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0 20px;
+    background-color: orange;
+    box-shadow: 0px 1px 0px 2px rgba(0, 0, 0, 0.19); }
+  .boss_box .nav_box {
+    padding: 10px 0;
+    background-color: gray; }
+    .boss_box .nav_box ul li {
+      float: left;
+      padding: 0 10px;
+      color: white; }
+    .boss_box .nav_box a {
+      text-decoration: none;
+      font-size: 16px;
+      color: white; }
+    .boss_box .nav_box li:nth-of-type(2) {
+      text-decoration: none; }
+      .boss_box .nav_box li:nth-of-type(2) a {
+        position: relative; }
+        .boss_box .nav_box li:nth-of-type(2) a::before {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 15px;
+          background-color: white;
+          position: absolute;
+          top: 2px;
+          left: -10px; }
+        .boss_box .nav_box li:nth-of-type(2) a::after {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 15px;
+          background-color: white;
+          position: absolute;
+          top: 2px;
+          left: 87px; }
+    .boss_box .nav_box li:nth-of-type(4) {
+      text-decoration: none; }
+      .boss_box .nav_box li:nth-of-type(4) a {
+        position: relative; }
+        .boss_box .nav_box li:nth-of-type(4) a::before {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 15px;
+          background-color: white;
+          position: absolute;
+          top: 2px;
+          left: -10px; }
+        .boss_box .nav_box li:nth-of-type(4) a::after {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 15px;
+          background-color: white;
+          position: absolute;
+          top: 2px;
+          left: 73px; }
+    .boss_box .nav_box li:nth-of-type(6) {
+      text-decoration: none; }
+      .boss_box .nav_box li:nth-of-type(6) a {
+        position: relative; }
+        .boss_box .nav_box li:nth-of-type(6) a::before {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 15px;
+          background-color: white;
+          position: absolute;
+          top: 2px;
+          left: -10px; }
+        .boss_box .nav_box li:nth-of-type(6) a::after {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 15px;
+          background-color: white;
+          position: absolute;
+          top: 2px;
+          left: 121px; }
+    .boss_box .nav_box li:nth-of-type(7) a {
+      position: relative; }
+      .boss_box .nav_box li:nth-of-type(7) a::after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 15px;
+        background-color: white;
+        position: absolute;
+        top: 2px;
+        left: 105px; }
+  .boss_box .zhong_box {
+    width: 728px;
+    height: 544px;
+    position: relative;
+    border: 3px solid skyblue;
+    margin-top: 20px;
+    margin-left: 200px;
+    background-color: white; }
+    .boss_box .zhong_box .ka {
+      width: 394px;
+      height: 459px;
+      border-radius: 30px;
+      background-color: white;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.19);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .boss_box .zhong_box .ka .nav > li {
+        font-size: 18px; }
+      .boss_box .zhong_box .ka a {
+        padding: 15px 50px; }
+      .boss_box .zhong_box .ka .nav-tabs > li.active > a,
+      .boss_box .zhong_box .ka .nav-tabs > li.active > a:hover,
+      .boss_box .zhong_box .ka .nav-tabs > li.active > a:focus {
+        border: none;
+        background-color: skyblue;
+        color: white;
+        border-radius: 20px; }
+      .boss_box .zhong_box .ka .nav-tabs > li > a:hover {
+        border-color: transparent; }
+      .boss_box .zhong_box .ka .nav-tabs > li > a {
+        margin-right: 5px; }
+      .boss_box .zhong_box .ka table input {
+        border: 1px solid gainsboro;
+        padding: 3px 10px;
+        background-color: #daecec;
+        margin-left: 40px; }
+      .boss_box .zhong_box .ka table tr {
+        padding-bottom: 20px; }
+      .boss_box .zhong_box .ka table button {
+        width: 28px;
+        height: 28px;
+        background-color: #daecec; }
+        .boss_box .zhong_box .ka table button .icon-geren01 {
+          font-size: 16px; }
+      .boss_box .zhong_box .ka table p {
+        padding: 10px 0;
+        margin-left: 40px; }
+      .boss_box .zhong_box .ka table .duan {
+        width: 150px; }
+      .boss_box .zhong_box .ka table a {
+        text-decoration: none;
+        font-size: 10px;
+        margin-left: 100px; }
+      .boss_box .zhong_box .ka table div {
+        width: 284px;
+        height: 34px;
+        background-color: skyblue;
+        border-radius: 12px;
+        margin-left: 50px; }
+        .boss_box .zhong_box .ka table div .mimadenglu {
+          font-size: 20px;
+          margin-left: 75px;
+          line-height: 34px;
+          color: white; }
+      .boss_box .zhong_box .ka table .forget {
+        padding-left: 200px;
+        color: gray;
+        cursor: pointer; }
+      .boss_box .zhong_box .ka table ol {
+        margin-left: 40px; }
+      .boss_box .zhong_box .ka table ol li {
+        list-style: decimal;
+        font-size: 12px;
+        color: darkgray; }
+      .boss_box .zhong_box .ka table .huoqu {
+        color: white;
+        background-color: skyblue;
+        margin-bottom: 20px; }
+  .boss_box .falv li {
+    margin-left: 8px;
+    float: left;
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+    position: relative; }
+    .boss_box .falv li:nth-of-type(2)::before {
+      content: "";
+      width: 2px;
+      height: 12px;
+      background-color: gray;
+      position: absolute;
+      top: 1px;
+      left: -5px; }
+    .boss_box .falv li:nth-of-type(2)::after {
+      content: "";
+      width: 2px;
+      height: 12px;
+      background-color: gray;
+      position: absolute;
+      top: 1px;
+      left: 87px; }
+    .boss_box .falv li:nth-of-type(4)::before {
+      content: "";
+      width: 2px;
+      height: 12px;
+      background-color: gray;
+      position: absolute;
+      top: 1px;
+      left: -5px; }
+    .boss_box .falv li:nth-of-type(4)::after {
+      content: "";
+      width: 2px;
+      height: 12px;
+      background-color: gray;
+      position: absolute;
+      top: 1px;
+      left: 63px; }
+    .boss_box .falv li:nth-of-type(6)::before {
+      content: "";
+      width: 2px;
+      height: 12px;
+      background-color: gray;
+      position: absolute;
+      top: 1px;
+      left: -5px; }
+    .boss_box .falv li:nth-of-type(6)::after {
+      content: "";
+      width: 2px;
+      height: 12px;
+      background-color: gray;
+      position: absolute;
+      top: 1px;
+      left: 75px; }
+  .boss_box p {
+    font-size: 12px;
+    margin-left: 25px; }
+
+/*# sourceMappingURL=login.css.map */

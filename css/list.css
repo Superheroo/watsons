@@ -1,0 +1,199 @@
+@charset "UTF-8";
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td, menu {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+ul, dl, ol {
+  list-style: none; }
+
+img, fieldset, input[type="submit"] {
+  border: 0 none; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button, input[type="button"] {
+  cursor: pointer;
+  border: 0 none; }
+
+a, button, input, img {
+  -webkit-touch-callout: none; }
+
+img {
+  /*pointer-events:none;*/
+  /*禁止图片的点击事件，例如长按保存图片*/ }
+
+input, select, textarea {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+html, body {
+  /*禁止用户选择元素*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  /*禁止元素点击出现半透明黑色背景*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Microsoft YaHei', 'Heiti SC';
+  outline: 0;
+  -webkit-text-size-adjust: none; }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative; }
+
+.clear_fix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.goods_box {
+  background-color: #F2F5FE; }
+  .goods_box .goods_content ol li {
+    padding: 0;
+    margin: 0;
+    float: left;
+    padding: 10px; }
+  .goods_box .goods_content li {
+    text-indent: 2em;
+    position: relative; }
+    .goods_box .goods_content li:nth-of-type(2) ::before {
+      content: ">";
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      top: 10px;
+      left: -20px; }
+    .goods_box .goods_content li a {
+      color: black; }
+  .goods_box .goods_content .pinpai {
+    margin-left: 110px;
+    background-color: white; }
+    .goods_box .goods_content .pinpai .pinpai_left {
+      border-right: 1px solid gainsboro; }
+      .goods_box .goods_content .pinpai .pinpai_left p {
+        padding: 10px;
+        text-align: center; }
+    .goods_box .goods_content .pinpai .pinpai_right a {
+      display: inline-block;
+      color: black;
+      padding: 15px;
+      text-decoration: none; }
+    .goods_box .goods_content .pinpai .pinpai_right a:hover {
+      color: red; }
+    .goods_box .goods_content .pinpai .pinpai_right button {
+      width: 55px;
+      height: 30px;
+      background-color: transparent;
+      border: 1px solid gray; }
+      .goods_box .goods_content .pinpai .pinpai_right button .icon-arrow {
+        color: red; }
+  .goods_box .goods_content .chandi {
+    margin-bottom: 20px;
+    margin-left: 110px;
+    background-color: white;
+    border-top: 1px dashed lightgray;
+    border-bottom: 1px dashed lightgray; }
+    .goods_box .goods_content .chandi .chandi_left {
+      border-right: 1px solid gainsboro; }
+      .goods_box .goods_content .chandi .chandi_left p {
+        padding: 10px;
+        text-align: center; }
+    .goods_box .goods_content .chandi .chandi_right a {
+      display: inline-block;
+      color: black;
+      padding: 15px 40px;
+      text-decoration: none; }
+    .goods_box .goods_content .chandi .chandi_right a:hover {
+      color: red; }
+    .goods_box .goods_content .chandi .chandi_right button {
+      margin-left: 74px;
+      width: 55px;
+      height: 30px;
+      background-color: transparent;
+      border: 1px solid gray; }
+      .goods_box .goods_content .chandi .chandi_right button .icon-arrow {
+        color: red; }
+  .goods_box .goods_content .goods {
+    margin-left: 110px;
+    background-color: white; }
+    .goods_box .goods_content .goods .goods_a {
+      height: 400px; }
+      .goods_box .goods_content .goods .goods_a .img {
+        border: 1px solid gainsboro;
+        padding: 10px;
+        width: 220px;
+        height: 245px;
+        overflow: hidden;
+        text-align: center;
+        position: relative; }
+      .goods_box .goods_content .goods .goods_a img {
+        max-width: 200px;
+        max-height: 200px;
+        cursor: pointer; }
+      .goods_box .goods_content .goods .goods_a a {
+        display: inline-block;
+        background-color: #00a0aa;
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        width: 100%;
+        height: 40px;
+        transition: all .2s ease-in-out;
+        position: absolute;
+        bottom: -40px;
+        left: 0; }
+      .goods_box .goods_content .goods .goods_a .img:hover a {
+        transform: translateY(-40px); }
+      .goods_box .goods_content .goods .goods_a .xiangqing {
+        background-color: transparent;
+        color: black;
+        font-size: 14px;
+        position: absolute;
+        top: 240px;
+        left: 0; }
+      .goods_box .goods_content .goods .goods_a .xiangqing:hover {
+        color: red; }
+      .goods_box .goods_content .goods .goods_a .p1 {
+        position: absolute;
+        top: 316px;
+        left: 8px;
+        font-size: 18px;
+        color: red; }
+      .goods_box .goods_content .goods .goods_a .p2 {
+        position: absolute;
+        top: 350px;
+        left: 10px; }
+      .goods_box .goods_content .goods .goods_a span {
+        color: gainsboro;
+        text-decoration: line-through; }
+
+/*# sourceMappingURL=list.css.map */
